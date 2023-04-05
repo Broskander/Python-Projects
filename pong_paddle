@@ -1,0 +1,19 @@
+from turtle import Turtle
+
+class Player(Turtle):
+
+    def __init__(self, coord):
+        super().__init__()
+        self.shape("square")
+        self.shapesize(stretch_wid=5, stretch_len=1)
+        self.color("white")
+        self.penup()
+        self.goto(coord)
+
+    def up(self):
+        y = self.ycor() + 50
+        self.goto(self.xcor(), y)
+
+    def down(self):
+        y = self.ycor() - 50
+        self.goto(self.xcor(), y)
