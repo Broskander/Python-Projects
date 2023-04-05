@@ -1,14 +1,3 @@
-# File Name: credit_card.py
-#
-#  Student Name: Ayaan Syed
-#  Student Login ID: 1290935
-#
-#  Course Name: COSC 1423
-#
-#  Description: Assignment 7
-#  Date Created: 10/17/2022
-#  Date Last Modified: 10/19/2022
-
 def digit(x):
     return [int(y) for y in str(x)]
 
